@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Special+Elite&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: #222;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.logo img{
+    width: 70px;
+}
+nav{
+    position: fixed;
+    width: 89.7vw;
+    margin: auto;
+    padding: 10px 0;
+    font-family: 'Josefin Slab',sans-serif;
+    z-index: 999;
+    background-image: url('../img/navl.png');
+    background-size: 104%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom: 2px solid #D13149;
+}
+nav .max-width{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+ul{
+    padding-right: 8%;
+}
+li{
+    display: inline-block;
+    list-style: none;
+}
+li a{
+    margin-left: 45px;
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 5px solid rgba(34, 34, 34, 0);
+    transition: all 0.3s ease;
+}
+li a:hover{
+    border-bottom: 5px solid #D13149;
+    border-top: 5px solid  #2e2e2e ;
+    border-left: 5px solid  #2e2e2e;
+    border-right: 5px solid  #2e2e2e;
+    background-color: #2e2e2e;
+}
+header{
+    background-image: url('../img/back.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 90vw;
+    border-left:2px solid  rgba(209, 49, 73,0.5);
+    border-right:2px solid  rgba(209, 49, 73,0.5);
+    margin: auto;
+}
+
+
+/* home styling start */
+
+.home{
+    display: flex;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'Josefin Slab',sans-serif;
+}
+.home .max-width{
+    margin: 200px auto 0 20px;
+}
+.home .home-content .tx-1{
+    font-size: 27px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+.home .home-content .tx-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -1px;
+}
+.home .home-content .tx-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .tx-3 span{
+    font-weight: 600;
+    color:  #D13149;
+}
+.home .max-width a{
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #D13149;
+    padding: 5px 15px;
+    display: inline-block;
+    margin-top: 50px;
+    left: 40%;
+    position: relative;
+    border: 3px solid  #751b28;
+    transition: all 0.2s ease;
+}
+.home .max-width a:hover{
+    background: none;
+    background-image: url('../img/navl.png');
+    background-position: center;
+
+}
+
+/*About styling start*/
+
+.about{
+    display: flex;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'Josefin Slab',sans-serif;
+    width: 90vw;
+    margin: auto;
+    background-image: url('../img/back.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-left:2px solid  rgba(209, 49, 73,0.5);
+    border-right:2px solid  rgba(209, 49, 73,0.5);
+}
+.about .title{
+    font-family: 'Ubuntu',sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #fff;
+}
+.about .title::before{
+    position: absolute;
+    content: "who am i";
+    width: 180px;
+    height: 3px;
+    background: #D13149;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.about .title::after{
+    position: absolute;
+    font-size: 20px;
+    color: #2a9d8f;
+    padding: 5px;
+    background: #fff;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.column{
+    display: inline-block;
+    width: 45%;
+}
+.about .left img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid  #D13149;
+    transition: all 0.8s ease;
+
+
+}
+.about .left img:hover{
+    border: 5px solid  #91ff00;
+
+
+}
+.about .left{
+    float: left;
+
+}
+.about .right{
+    float: right;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    padding-right: 5%;
+    border-radius: 9px;
+
+    transition: all 0.3s ease;
+}
+.about .right:hover{
+    background-color: #fff;
+    color: #000;
+}
+.about .right p{
+    font-size: 23px;
+
+}
